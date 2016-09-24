@@ -1,0 +1,3 @@
+*.pyc
+.eggs/
+ccminas.db
