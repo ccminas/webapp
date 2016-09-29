@@ -73,6 +73,10 @@ def show_entries():
     entries = cur.fetchall()
     return render_template('welcome.html')
 
+@app.route('/home')
+def home():
+    return render_template('welcome2.html')
+
 
 @app.route('/add', methods=['POST'])
 def add_entry():
