@@ -8,6 +8,11 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('login');
+  this.route('admin');
+  this.route('events', function() {
+    this.route('new');
+    this.route('edit');
+  });
 });
 
 export default Router;
