@@ -8,7 +8,6 @@ export default Ember.Route.extend({
 
       const newEvent = this.store.createRecord('event', event);
 
-      console.log(newEvent);
       newEvent.save().then(() => this.transitionTo('events'));
     }
   }

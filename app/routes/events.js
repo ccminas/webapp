@@ -1,5 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  return this.store.findAll('event');
+  model() {
+    return this.store.findAll('event');
+  }
+
 });
