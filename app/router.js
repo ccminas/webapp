@@ -6,12 +6,14 @@ const Router = Ember.Router.extend({
   rootURL: config.rootURL
 });
 
-Router.map(function() {
+Router.map(function () {
   this.route('login');
   this.route('admin');
-  this.route('events', function() {
+  this.route('events', function () {
     this.route('new');
-    this.route('edit');
+    this.route('edit', {
+      path: '/:event_id/edit'
+    });
   });
 });
 
