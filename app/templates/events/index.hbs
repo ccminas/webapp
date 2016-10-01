@@ -2,7 +2,7 @@
     <h1>Lista de Eventos</h1>
     {{#each model as |event|}}
         <p>{{event.name}}</p>
-        <p>{{event.date}}</p>
+        <p>{{moment-format event.date "MM/DD/YYYY"}}</p>
         <p>{{event.description}}</p>
         {{#if event.picture_url}}
             <img src={{event.picture_url}}/>
