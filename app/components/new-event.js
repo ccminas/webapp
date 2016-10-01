@@ -11,7 +11,8 @@ export default Ember.Component.extend({
 
   actions: {
     saveEvent(newEvent) {
-      console.log("salvar evento componente");
+      console.log("Componente");
+      this.get('save')(newEvent);
     }
   }
 });
