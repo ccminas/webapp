@@ -10,8 +10,20 @@ export default Ember.Component.extend({
   isDisabled: Ember.computed.empty('eventName') && Ember.computed.empty('eventDate') && Ember.computed.empty('eventDescription'),
 
   actions: {
-    saveEvent(newEvent) {
+    saveEvent() {
       console.log("Componente");
+
+
+      console.log(this.get('eventName'));
+      var newEvent = {
+        name: this.get('eventName'),
+        date: this.get('eventDate'),
+        description: this.get('eventDescription'),
+        picture_url: this.get('eventImage')
+      };
+
+      console.log(newEvent);
+
       this.get('save')(newEvent);
     }
   }
