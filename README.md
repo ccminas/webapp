@@ -32,6 +32,6 @@ $ python setup.py test
 	- Dayanne Fernandes da Cunha
 	- dayannefernandesc@gmail.com
 
-- @lenamiroux
+- @lenasimoes
 	- Helena Quintas Neves Simões
 	- helena.simoes@me.com
