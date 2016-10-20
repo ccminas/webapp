@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    {{#each model as |event|}}
+      <div class="col-md-4">
+        <div class="panel panel-default event-item">
+          <div class="panel-heading">
+            <h3 class="panel-title">{{event.name}}</h3>
+          </div>
+          <div class="panel-body">
+            <p>{{moment-format event.date "MM/DD/YYYY"}}</p>
+            <p>{{event.description}}</p>
+            {{#if event.picture_url}}
+              <img src= {{event.picture_url}} />
+            {{/if}}
+          </div>
+          <div class="panel-footer text-right">
+            {{#link-to 'events.edit' event.id class='btn btn-success btn-xs' }}Edit{{/link-to}}
+            <button class="btn btn-danger btn-xs" {{action 'deleteEvent' event}}>Delete</button>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
