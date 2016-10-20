@@ -1,3 +1,5 @@
-{{navbar-default}}
-
-{{outlet}}
+{{main-header session=session signOut=(route-action "signOut")}}
+<div class="container">
+    {{outlet}}
+    {{ember-notify messageStyle='bootstrap'}}
+</div>

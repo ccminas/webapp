@@ -6,44 +6,24 @@
 
 body {
   padding-top: 70px;
-  background: #E9E9E9 !important;
 }
 
 .login-panel {
   width: 600px;
 }
 
-.event-item {
-  min-height: 150px;
-}
-
-.navbar-custom .navbar-header .navbar-brand > .active > a {
-  background-color: #D1F2A5;
-}
-
-.navbar-custom {
-  background-color: #F67280;
-  color: #ffffff;
-  border-radius: 0;
-}
-
-.navbar-custom .navbar-nav > li > a {
+a:visited {
   color: #fff;
 }
 
-.navbar-custom .navbar-nav > .active > a,
-.navbar-nav > .active > a:focus,
-.navbar-nav > .active > a:hover {
-  color: #ffffff;
-  background-color: transparent;
+.navbar-brand > a:visited {
+  color: #dbbce0;
 }
 
-.navbar-custom .navbar-brand {
-  color: #eeeeee;
+li {
+  list-style-type: none;
 }
 
-.nav > li > a:focus,
-.navbar-custom .navbar-nav > li > a:hover {
-  text-decoration: none;
-  background-color: #C06C74;
+.thumbnail.events {
+  cursor: pointer;
 }

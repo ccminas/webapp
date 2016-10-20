@@ -7,14 +7,17 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function () {
-  this.route('login');
-  this.route('admin');
-  this.route('events', function () {
-    this.route('new');
-    this.route('edit', {
-      path: '/:event_id/edit'
+  this.authenticatedRoute('admin');
+  this.authenticatedRoute('events', function () {
+    this.authenticatedRoute('event', {path: ':event_id'}, function () {
+      this.authenticatedRoute('show');
+      this.authenticatedRoute('edit');
     });
+    this.authenticatedRoute('new');
   });
+  this.route('blog');
+  this.route('sign-up');
+  this.route('sign-in');
 });
 
 export default Router;

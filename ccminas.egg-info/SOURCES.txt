@@ -1,8 +1,0 @@
-setup.cfg
-ccminas/__init__.py
-ccminas/ccminas.py
-ccminas.egg-info/PKG-INFO
-ccminas.egg-info/SOURCES.txt
-ccminas.egg-info/dependency_links.txt
-ccminas.egg-info/requires.txt
-ccminas.egg-info/top_level.txt

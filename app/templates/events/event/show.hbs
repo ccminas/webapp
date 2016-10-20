@@ -1,0 +1,20 @@
+<div class="panel panel-default">
+  <center>
+    <div class="panel-heading">
+        <h3 class="panel-title">{{model.name}}</h3>
+    </div>
+  </center>
+
+  <div class="panel-body">
+    <img src= {{model.picture}} class="img-fluid" alt="">
+    <a href="#">
+      <div class="mask waves-effect waves-light"></div>
+    </a>
+    <p class="card-text">{{moment-format model.date 'DD/MM/YYYY'}}</p>
+    <p class="card-text">{{model.description}}</p>
+    <center>
+      {{#link-to "events.event.edit" model class="btn btn-info" }}Editar evento{{/link-to}}
+      <a {{action 'deleteEvent' model}} class="btn btn-danger">Excluir evento</a>
+    </center>
+  </div>
+</div>
