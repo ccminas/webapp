@@ -1,1 +1,0 @@
-from ccminas import app
