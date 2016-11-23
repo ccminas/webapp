@@ -1,5 +1,7 @@
 {{main-header session=session signOut=(route-action "signOut")}}
 <div class="container">
+    {{debugger}}
+    {{show-events events=model activeEvent=activeEvent}}
     {{outlet}}
     {{ember-notify messageStyle='bootstrap'}}
 </div>
